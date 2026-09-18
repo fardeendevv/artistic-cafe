@@ -1,0 +1,6 @@
+{
+  "name": "Artistic",
+  "description": "Artisanal specialty coffee roastery and craft espresso cafe in Lahore featuring 360-degree rotating cup animations, interactive menus, and seamless ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

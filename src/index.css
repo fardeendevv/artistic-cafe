@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-handwritten {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* 360-degree rotation animation for cups */
+@keyframes spin360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-360 {
+  animation: spin360 22s linear infinite;
+}
+
+.animate-spin-360-fast {
+  animation: spin360 12s linear infinite;
+}
+
+.animate-spin-360-slow {
+  animation: spin360 36s linear infinite;
+}
+
+.animate-spin-360-reverse {
+  animation: spin360 24s linear infinite reverse;
+}
+
+/* Steam rising animations */
+@keyframes steamRise1 {
+  0% {
+    transform: translateY(0) scaleX(0.8) scaleY(0.6);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+    transform: translateY(-16px) scaleX(1.1) scaleY(1);
+  }
+  70% {
+    opacity: 0.3;
+    transform: translateY(-34px) scaleX(1.4) scaleY(1.2);
+  }
+  100% {
+    transform: translateY(-50px) scaleX(1.8) scaleY(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes steamRise2 {
+  0% {
+    transform: translateY(0) scaleX(1) scaleY(0.7);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.5;
+    transform: translateY(-20px) scaleX(0.9) scaleY(1);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translateY(-42px) scaleX(1.5) scaleY(1.3);
+  }
+  100% {
+    transform: translateY(-60px) scaleX(2) scaleY(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-steam-1 {
+  animation: steamRise1 3.5s ease-out infinite;
+}
+
+.animate-steam-2 {
+  animation: steamRise2 4.2s ease-out infinite 0.8s;
+}
+
+.animate-steam-3 {
+  animation: steamRise1 3.8s ease-out infinite 1.6s;
+}
+
+/* Floating Badges */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatGentleReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(-1.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatGentleReverse 6s ease-in-out infinite;
+}
+
+/* Coffee bean texture background for footer and hero */
+.bg-coffee-pattern {
+  background-color: #26140E;
+  background-image: radial-gradient(#3d2017 1.3px, transparent 1.3px), radial-gradient(#1f0f0a 1.3px, #26140E 1.3px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.shadow-soft-card {
+  box-shadow: 0 20px 35px -10px rgba(50, 25, 15, 0.08), 0 5px 15px -3px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-glow-caramel {
+  box-shadow: 0 10px 40px -10px rgba(200, 138, 88, 0.45);
+}
+
+.shadow-glow-warm {
+  box-shadow: 0 12px 35px -8px rgba(83, 44, 32, 0.5);
+}
+
